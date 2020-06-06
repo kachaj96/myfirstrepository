@@ -72,7 +72,7 @@ li a:hover {
 .dropbtn {
     background-color: #1abc9c;
     color: white;
-    padding: 16px;
+    padding: 14px;
     font-size: 16px;
     border: none;
     min-width: 108px;
@@ -118,4 +118,37 @@ li a:hover {
 .dropdown:hover .dropbtn {
     background-color: white;
     color: black;
+}
+
+/* Ensure proper sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding-top: 0px;
+}
+  
+/* Main column */
+.main {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+  
+/* image of me */
+.me-deadlift {
+    background-color: #333333;
+    width: 100%;
+    padding: 20px;
 }
