@@ -3,15 +3,28 @@
         <head>
                 <title>About Me</title>
                 <link rel="stylesheet" type="text/css" href="css/main-menu.css">
+                <script src="javascript/main-menu.js"></script>
         </head>
         <body>
                 <h2>My First Webpage About Me</h2>
                 <p>Click any button below to access more informations.</p>
                 <ul>
-                        <li><a href="#about-me">About Me</a></li>
+                        <li>
+                        <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">About Me</button>
+                        </div>
+                        </li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="C:/Users/drozd/OneDrive/Pulpit/projects/myprojects/html/index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                 </ul>
+                <!-- rozwijane menu na zasadzie buttona z javascript -->
+                <!-- można użyć obojętnie jakiego elementu, np. <button>, <a>, lub <p> -->
+                <!-- <div> musi być nad buttonem, a kolejny <div> pozycjonuje menu dzięki CSS -->
+                        <div id="myDropdown" class="dropdown-content">
+                        <a href="#"><img src="images/fb.png" width="76px"></a>
+                        <a href="#"><img src="images/linkedin.png" width="76px"></a>
+                        <a href="#"><img src="images/yt.png" width="76px"></a>
+                        </div>
         </body>
 </html>
