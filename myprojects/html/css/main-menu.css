@@ -1,3 +1,45 @@
+.header {
+    padding: 80px; /* dodaje odstęp */
+    text-align: center; /* centruje tekst */
+    background: #1abc9c; /* nadaje kolor tła */
+    color: white; /* nadaje kolor tekstu */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* zmienia czcionkę na Verdana */
+}
+  
+/* zwiększa rozmiar czcionki w headerze o wartości h1 */
+.header h1 {
+    font-size: 40px;
+}
+
+/* styl górnego "bara" */
+.navbar {
+    overflow: hidden; /* chowa overflow */
+    background-color: #333; /* ciemne tło */
+}
+  
+/* styl linkowania "bara" */
+.navbar a {
+    float: left; /* od lewej do prawej */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none; /* usuwa podkreślenie */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+/* przenoszenie ostatniego linku na prawo */
+.navbar a.right {
+    float: right; /* przenosi ostatni link na prawą stronę */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+/* zmiana koloru - "hover"  */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -23,12 +65,12 @@ li a {
 }
 
 li a:hover {
-    background-color: #4CAF50;
+    background-color: #1abc9c;
 }
 
 /* stylizowanie przycisku dropdown */
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #1abc9c;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -74,5 +116,6 @@ li a:hover {
   
 /* zmienia kolor przycisku dropdown kiedy menu jest aktywne po najechaniu */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: white;
+    color: black;
 }

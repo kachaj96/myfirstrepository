@@ -5,19 +5,21 @@
                 <link rel="stylesheet" type="text/css" href="css/main-menu.css">
         </head>
         <body>
-                <h2>My First Webpage About Me</h2>
-                <p>Click any button below to access more informations.</p>
-                <ul>
-                        <li><a href="#experience">About Me</a></li>
-                        <li><a href="#contact">Experience</a></li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="html/script-testing.html">Script Testing</a></li>
-                </ul>
+                <div class="header">
+                        <h1>My Website</h1>
+                        <p>A website created by me.</p>
+                </div>
+                <div class="navbar">
+                        <a href="#">About Me</a>
+                        <a href="#">Experience</a>
+                        <a href="#">Contact</a>
+                        <a href="#" class="right">Home</a>
+                </div>
 <!-- rozwijane menu po najechaniu -->
 <!-- można użyć obojętnie jakiego elementu, np. <button>, <a>, lub <p> -->
 <!-- <div> musi być nad buttonem, a kolejny <div> pozycjonuje menu dzięki CSS -->
                 <div class="dropdown">
-                        <button class="dropbtn">Social</button>
+                        <button class="dropbtn">Social Media</button>
                         <div class="dropdown-content">
                         <a href="#"><img src="images/fb.png" width="23px"></a>
                         <a href="#"><img src="images/linkedin.png" width="23px"></a>
