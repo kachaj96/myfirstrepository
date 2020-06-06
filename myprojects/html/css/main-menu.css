@@ -20,57 +20,56 @@ li a {
 }
 
 li a:hover {
-    background-color: #ffbb00;
+    background-color: #4CAF50;
 }
 
-/* stylizowanie menu dropdown */
-/* dopasowanie stylu menu dropdown - przycisku "About Me" */
+/* stylizowanie przycisku dropdown */
 .dropbtn {
-    background-color: #333333;
+    background-color: #4CAF50;
     color: white;
     padding: 16px;
     font-size: 16px;
+    border: none;
+    min-width: 108px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: none;
-    cursor: pointer;
 }
   
-  /* hover buttona i focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #ffbb00;
-    border: none;
-}
-  
-  /* klasa .dropdown używa position:relative, który ustawia kontent menu 
-  bezpośrednio pod przyciskiem "About Me" */
+/* kontener <div> i kontent znajdujący się w nim po najechaniu */
 .dropdown {
     position: relative;
-    display: inline-block; /* display: inline-block zmienia kontent na blokowy, zamiast globalny */
+    display: inline-block;
 }
   
-  /* .dropdown-content odpowiada za główne menu, jest standardowo schowane i będzie wyświetlone
-  dzięki funkcji hover */
-    .dropdown-content {
-    display: none; /* funkcja display: none ukrywa menu w standardzie */
-    background-color: #f1f1f1;
-    min-width: 160px; /* funkcja min-width odpowiada za minimalną szerokość bloku menu */
+/* kontent menu dropdown (niewidoczny przed najechaniem) */
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f1f1f1; /* tło pojawiających się boxów */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* dodaje cień pod boxami (efekt 3D) */
+    float: right;
 }
   
-  /* styl linków */
+/* linki znajdujące się w dropdown */
 .dropdown-content a {
-    color: black;
+    color: black; /* kolor linku przed najechaniem */
     padding: 12px 16px;
-    text-decoration: none; /* usuwa podkreślenie linku */
-    display: block; /* ustawia menu blokowo, jedno pod drugim */
-    max-width: 76px;
+    text-decoration: none; /* usuwa podkreślniki pod linkami */
+    display: block;
+    float: left;
 }
   
-  /* zmiana koloru linków na hover */
+/* zmiana koloru linków po najechaniu*/
 .dropdown-content a:hover {
-    background-color: white /* podświetlenie po najechaniu */
-} 
+    background-color: #ddd;
+}
   
-  /* pokazuje całe menu, potrzebny javascript */
-.show {
-    display:block;
+  /* pokazuje menu po najechaniu */
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+  
+/* zmienia kolor przycisku dropdown kiedy menu jest aktywne po najechaniu */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
