@@ -11,20 +11,20 @@
                 </div>
                 <div class="navbar">
                         <a href="#">Experience</a>
-                        <a href="#">Contact</a>
+                        <a href="contact.html">Contact</a>
 <!-- rozwijane menu po najechaniu -->
 <!-- można użyć obojętnie jakiego elementu, np. <button>, <a>, lub <p> -->
 <!-- <div> musi być nad buttonem, a kolejny <div> pozycjonuje menu dzięki CSS -->
                         <div class="dropdown">
-                                <button class="dropbtn">Social Media</button>
+                                <button class="dropbtn" style="cursor: pointer;">Social Media</button>
                                 <div class="dropdown-content">
                                 <a href="https://www.facebook.com/adrian.drozdzynski"><img src="images/fb.png" width="21px"></a>
                                 <a href="https://www.linkedin.com/in/adriandrozdzynski/"><img src="images/linkedin.png" width="21px"></a>
                                 <a href="https://www.youtube.com/channel/UCwRFMj8aJ4Ra0uSN_M_xkwg"><img src="images/yt.png" width="21px"></a>
                                 </div>
                         </div>
-                        <a href="index.html" class="right">Home</a>
-                        </div>
+                        <a href="index.html" class="right" style="background-color: #1abc9c;">Home</a>
+                </div>
                 <div class="row">
                         <div class="side"><img class="me-deadlift" src="images/me-deadlift.jpg"></div>
                         <div class="main">
@@ -45,16 +45,19 @@
                 </div>
                 <br>
                 <div class="footer">
-                        <h2>Footer</h2>
+                        <h2 style="color: white">Information</h2>
+                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
+                                Website created by Adrian Drożdżyński. You can contact with me by "Contact" section. All rights reserved, LOL.
+                        </p>
                 </div>
-<!-- test wysuwanego filmu -->
-                <!-- The overlay -->
-                <div id="myNav" class="overlay">
 
-                <!-- Button to close the overlay navigation -->
+                <!-- WYSUWANE MENU Z FILMEM -->
+                <div id="video-slide" class="overlay">
+
+                <!-- PRZYCISK ZAMYKANIA MENU -->
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       
-                        <!-- Overlay content -->
+                        <!-- KONTENT MENU -->
                         <div class="overlay-content">
                                 <iframe width="560" height="315" 
                                 src="https://www.youtube.com/embed/bjEQH7YIqxw" 
