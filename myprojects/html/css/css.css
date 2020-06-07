@@ -160,3 +160,57 @@ li a:hover {
     background: #1abc9c;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* best lifts list */
+.bestlifts {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+}
+
+/* test wysuwanego filmu */
+
+/* tło wysuwanego "menu" */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; /* menu w jednym miejscu */
+    z-index: 1; /* pozostaje na górze */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* wyłącza przesuwanie poziome */
+    transition: 0.5s; /* czas wysuwania menu */
+  }
+  
+/* pozycja kontentu w wysuwanym "menu" */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% od góry */
+    width: 100%; /* 100% szerokie */
+    text-align: center; /* wycentrowany tekst lub linki */
+    margin-top: 30px; /* przynajmniej 30px odstępu od góry, aby uniknąć blokady przycisku zamykania */
+}
+  
+/* linki nawigacyjne w menu */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* wyświetla "boxy" */
+    transition: 0.3s; /* po jakim czasie ma podświetlić się link po najechaniu */
+}
+  
+/* jak najedziesz na link, zmieni kolor */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+  
+/* pozycjonuje przycisk zamykania */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}

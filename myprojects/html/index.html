@@ -2,7 +2,7 @@
 <html>
         <head>
                 <title>About Me</title>
-                <link rel="stylesheet" type="text/css" href="css/main-menu.css">
+                <link rel="stylesheet" type="text/css" href="css/css.css">
         </head>
         <body>
                 <div class="header">
@@ -10,7 +10,6 @@
                         <p>A website created by me.</p>
                 </div>
                 <div class="navbar">
-                        <a href="#">About Me</a>
                         <a href="#">Experience</a>
                         <a href="#">Contact</a>
 <!-- rozwijane menu po najechaniu -->
@@ -28,11 +27,42 @@
                         </div>
                 <div class="row">
                         <div class="side"><img class="me-deadlift" src="images/me-deadlift.jpg"></div>
-                        <div class="main">SAMPLE TEXT</div>
+                        <div class="main">
+                                <h2>About Me</h2>
+                                <hr>
+                                <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">I am amateur powerlifter in <b>RAW category</b> (no special equipment like suit or bench press shirt).</p>
+                                <div class="bestlifts">My best lifts are:
+                                        <p>
+                                                Squat: 250 kg<br>
+                                                Bench Press: 132,5 kg<br>
+                                                Deadlift: 230 kg
+                                        </p>
+                                        If you want to see my last competition, <span onclick="openNav()"><b style="cursor: pointer;">click here!</b></span>
+                                        <!-- skrypt otwierania "slide-left-menu" -->
+                                        <script src="javascript/video-slide-menu.js"></script>
+                                </div>
+                        </div>
                 </div>
                 <br>
                 <div class="footer">
                         <h2>Footer</h2>
+                </div>
+<!-- test wysuwanego filmu -->
+                <!-- The overlay -->
+                <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                                <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/bjEQH7YIqxw" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                                </iframe>
+                        </div>     
                 </div>
         </body>
 </html>
