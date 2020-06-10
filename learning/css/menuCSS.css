@@ -1,0 +1,51 @@
+header {
+	background-color: lightblue;
+	padding: 70px;
+}
+
+.header-title {
+	text-align: center;
+	font-family: Courier;
+	background-color: white;
+}
+
+.menu-background {
+	background-color: #ffff99;
+	position: relative;
+	border-style: none;
+}
+
+.menu {
+	position: relative;
+	font-family: Verdana;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.menu-links {
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+}
+
+.menu-links:hover {
+	background-color: black;
+	color: white;
+	padding: 5px;
+}
+
+.menu-home {
+	float: right;
+	text-decoration: none;
+	color: black;
+}
+
+.menu-home:hover {
+	background-color: black;
+	color: white;
+	padding: 5px;
+}
+
+.test {
+	height: 2000px;
+}

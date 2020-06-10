@@ -1,0 +1,23 @@
+.parent {
+	background-color: lightblue;
+}
+
+.child-one {
+	background-color: yellow;
+	/* positon: relative zezwala na relatywne (swobodne) przestawianie bloków, w tym wypadku <div> */
+	/* position: absolute usuwa element z "flow" strony, użyteczne jak nie chcemy by cokolwiek wpływało na jego pozycje */
+	/* jak w programowaniu CNC - relatywne do RODZICA i absolutne od RODZICA */
+	/* position: fixed ignoruje "rodzica", odnosi się do całego HTML */
+	/* ponadto position: fixed sprawia, że element jest w tym samym miejscu pomimo scrollowania */
+	/* position: sticky scrolluje się, ale gdy natknie się na nadaną pozycje, zostaje tam jak fixed */
+	position: relative;
+	left: 10px;
+}
+
+.child-two {
+	background-color: green;
+}
+
+.child-three {
+	background-color: orange;
+}

@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    /* no-repeat powoduje, że zdjęcie się nie powtarza */
+    background: url(images/mountains.jpg) no-repeat center;
+    /* background-size: cover pokrywa całe tło */
+    background-size: cover;
+    display: flex;
+    /* wszystkie elementy rodzica body są wycentrowane wertykalnie */
+    align-items: center;
+    /* wszystkie elementy rodzica body są wycentrowane horyzontalnie */
+    justify-content: center;
+}
+
+.contact-page {
+    width: 100%;
+    max-width: 1400px;
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h2 {
+    width: 100%;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    color: #F5F5DC;
+    font-size: 60px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+}
+
+.item {
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #F5F5DC;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #3494db;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.textb {
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    background: #222;
+    border: none;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    padding: 12px;
+    background: #222;
+    border: none;
+    color: #ffffff;
+    margin-bottom: 20px;
+    
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    margin-left: auto;
+    background-color: #3494db;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #3494db;
+    transition: .3s linear;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #3494db;
+}
+
+@media screen and (max-width: 980px){
+    .contact-page {
+        max-width: 800px;
+    }
+    h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .contact-info, .contact-form {
+        flex: 100%;
+        margin-bottom: 30px; 
+    }
+    .textb {
+        width: 100%;
+    }
+}
